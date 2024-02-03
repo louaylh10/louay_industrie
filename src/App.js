@@ -1,5 +1,5 @@
+
 import React, { useState, useRef, useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import log from './img/logo_original.png';
 import '@fortawesome/fontawesome-free/css/all.min.css';

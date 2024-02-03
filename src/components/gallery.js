@@ -1,3 +1,4 @@
+
 import React, { useState, useRef, useEffect } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import img1 from '../img/imgs/image1.jpg';
@@ -64,3 +65,4 @@ function Gallery() {
 }
 
 export default Gallery;
+
