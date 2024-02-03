@@ -44,7 +44,7 @@ function Contact() {
 <br/>
 <h3 className='contactez'>Visitez</h3>
 <div className='media'>
-<div className='items sm'><div className='it'><a href=''><i class="fa-brands fa-facebook"></i></a></div></div>
+<div className='items sm'><div className='it'><a href='https://www.facebook.com/profile.php?id=100085379020261' target='_blank'><i class="fa-brands fa-facebook"></i></a></div></div>
 <div className='items sm'><div className='it'><a href=''><i class="fa-brands fa-linkedin"></i></a></div></div>
 </div>
 </div>

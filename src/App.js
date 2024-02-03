@@ -26,12 +26,37 @@ function App() {
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
-  const clickacc=()=>{
+  const clickmen=()=>{
     const chk = document.querySelector("#check");
  
+
+  };
+  const clickacc=()=>{
+    const home = document.querySelector(".Home");
+    home.scrollIntoView({ behavior: "smooth" });
     handleCheckboxChange();
   };
-
+  const clickprop=()=>{
+    const prop = document.querySelector(".Apropos");
+    prop.scrollIntoView({ behavior: "smooth" });
+    handleCheckboxChange();
+  };
+  const clickgal=()=>{
+    const gal = document.querySelector(".Gallery");
+    gal.scrollIntoView({ behavior: "smooth" });
+    handleCheckboxChange();
+  };
+  const clickcnt=()=>{
+    const cnt = document.querySelector(".Contact");
+    cnt.scrollIntoView({ behavior: "smooth" });
+    handleCheckboxChange();
+  };
+  const whatsapp=()=> {
+    const numeroTelephone = '28815988';
+    const lienWhatsapp = `https://wa.me/${numeroTelephone}`;
+    window.open(lienWhatsapp);
+  }
+  
   return (
     <div className="App">
       <header>
@@ -45,9 +70,9 @@ function App() {
             <ul>
               <span className='headitems' ref={menRef}>
                 <a href='#' onClick={clickacc}><li>Acceuil</li></a>
-                <a href='#'><li>A Propos</li></a>
-                <a href='#'><li>Gallery</li></a>
-                <a href='#'><li>Contact</li></a>
+                <a href='#' onClick={clickprop}><li>A Propos</li></a>
+                <a href='#' onClick={clickgal}><li>Gallery</li></a>
+                <a href='#' onClick={clickcnt}><li>Contact</li></a>
                 <label htmlFor="check" className="close-menu"><i className="fas fa-times"></i></label>
               </span>
               <label htmlFor="check" className="open-menu"><i className="fas fa-bars"></i></label>
@@ -58,8 +83,9 @@ function App() {
       <div className='space' ref={sp}>
         
         </div>
-        <div className='what'><i class="fa-brands fa-whatsapp"></i></div>
-        <Home  />
+        <div className='what' onClick={whatsapp}><i class="fa-brands fa-whatsapp"></i></div>
+       
+        <Home />
         <Propos />
         <Gallery />
         <Contact />

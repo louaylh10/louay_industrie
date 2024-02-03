@@ -538,6 +538,12 @@ color: var(--color2);
       .cnt button{
         margin-left: 20px;
       }
+.contect .media{
+margin-left: 40%;
+position: relative;
+text-align: left;
+}
+      
 .space{
   position: absolute;
   top: 0px;
