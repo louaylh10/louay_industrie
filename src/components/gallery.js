@@ -38,19 +38,11 @@ function Gallery() {
     }
   };
 
- const  mv = (event) => {
-    const containerimg = document.querySelector(".imgs-container");
-    
-    if (event.clientX < containerimg.left + containerimg.width / 2) {
-      leftClick();
-    } else {
-     rightClick();
-    }
-  };
+
   return (
     <div className="Gallery">
 <h1 className='Titre'>Gallery</h1>
-<div className='imgs-container' onTouchMove={mv}>
+<div className='imgs-container'>
 <div className='left' onClick={leftClick} ><i class="fa-solid fa-chevron-left"></i></div>
 <div className='right'onClick={rightClick}><i class="fa-solid fa-chevron-right"></i></div>
 <div className='cntr'>
