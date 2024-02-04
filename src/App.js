@@ -51,7 +51,7 @@ function App() {
     handleCheckboxChange();
   };
   const whatsapp=()=> {
-    const numeroTelephone = '28815988';
+    const numeroTelephone = '+21628815988';
     const lienWhatsapp = `https://wa.me/${numeroTelephone}`;
     window.open(lienWhatsapp);
   }
