@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/louay_industrie/static/css/main.ae7e5f0a.css",
-    "main.js": "/louay_industrie/static/js/main.92c91072.js",
+    "main.css": "/louay_industrie/static/css/main.526ed6ce.css",
+    "main.js": "/louay_industrie/static/js/main.c9c49e3e.js",
     "static/js/787.c123c32a.chunk.js": "/louay_industrie/static/js/787.c123c32a.chunk.js",
     "static/media/personne-travaillant-dans-batiment-construction.jpg": "/louay_industrie/static/media/personne-travaillant-dans-batiment-construction.5de79a2bed36909c8c05.jpg",
     "static/media/fa-solid-900.ttf": "/louay_industrie/static/media/fa-solid-900.45a265d0f07b31cde85f.ttf",
@@ -17,12 +17,12 @@
     "static/media/fa-v4compatibility.ttf": "/louay_industrie/static/media/fa-v4compatibility.2eb7b3ef25042305f3ff.ttf",
     "static/media/fa-v4compatibility.woff2": "/louay_industrie/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "index.html": "/louay_industrie/index.html",
-    "main.ae7e5f0a.css.map": "/louay_industrie/static/css/main.ae7e5f0a.css.map",
-    "main.92c91072.js.map": "/louay_industrie/static/js/main.92c91072.js.map",
+    "main.526ed6ce.css.map": "/louay_industrie/static/css/main.526ed6ce.css.map",
+    "main.c9c49e3e.js.map": "/louay_industrie/static/js/main.c9c49e3e.js.map",
     "787.c123c32a.chunk.js.map": "/louay_industrie/static/js/787.c123c32a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae7e5f0a.css",
-    "static/js/main.92c91072.js"
+    "static/css/main.526ed6ce.css",
+    "static/js/main.c9c49e3e.js"
   ]
 }
