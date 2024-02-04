@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
 import log from './img/logo_original.png';
