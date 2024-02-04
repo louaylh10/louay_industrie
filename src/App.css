@@ -511,6 +511,13 @@ color: var(--color2);
   width: 60%;
   margin-left:100px ;
 }
+.error{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: red;
+margin-top: 3px;
+font-weight: bold;
+}
+
  @media (max-width:950px) {
   .navbar h2 {
     display: none;

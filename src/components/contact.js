@@ -2,13 +2,66 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 function Contact() {
-  
+ function verif(event) {
+  const nom=document.querySelector(".nom");
+  const prenom=document.querySelector(".prenom");
+  const email=document.querySelector(".email");
+  const obj=document.querySelector(".objet");
+  const mail=document.querySelector(".mail");
+  const e=document.querySelector(".error");
+  nom.style.border="";
+  prenom.style.border="";
+  email.style.border="";
+  obj.style.border="";
+  mail.style.border="";
+  if(nom.value==""){
+nom.style.border="1px solid red" ;
+e.innerHTML="Verifiez le nom";
+event.preventDefault();
+return false;
+  }
+  else  if(prenom.value==""){
+    prenom.style.border="1px solid red" ;
+    e.innerHTML="Verifiez le prenom";
+    event.preventDefault();
+    return false;
+      }
+      else   if(email.value=="" || email.value.indexOf('@')==-1 ||email.value.indexOf('.')==-1 ){
+        email.style.border="1px solid red" ;
+        e.innerHTML="Verifiez l'email il faux avoir . et @";
+        event.preventDefault();
+        return false;
+          }
+          else  if(obj.value==""){
+            obj.style.border="1px solid red" ;
+            e.innerHTML="Verifiez l'objet";
+            event.preventDefault();
+            return false;
+              }
+              else if(mail.value==""){
+                mail.style.border="1px solid red" ;
+                e.innerHTML="Votre message est vide !";
+                event.preventDefault();
+                return false;
+                  }
+  else{
+    nom.value="";
+    prenom.value="";
+    email.value="";
+    obj.value="";
+    mail.value="";
+    e.innerHTML='&nbsp;';
+
+    return true;
+}
+ }
   return (
     <div className="Contact">
 <h1 className='Titre'>Contact</h1>
 <div className='cnt'>
     <h3 className='contactez'>Contactez-Nous</h3>
-<form action='' >
+<form action='' onSubmit={verif}>
+<p className='error'>&nbsp;</p>
     <div className='item-form'>
 <input type='text' className='nom' placeholder='Nom' />
 </div>
