@@ -225,6 +225,7 @@ background-color: #031a6e6f;
   padding-top:25px ;
  padding-bottom: 45px;
 
+
 }
 .Apropos .Titre{
   color: var(--color2);
@@ -245,18 +246,63 @@ height: 10px;
 background-color: var(--color3);
 }
 .Apropos .prp{
-  margin-top: 35px;
+  width: 50%;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 30px;
+  line-height: 50px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-line-height: 2;
-justify-content: center;
-word-spacing: 2px;
+  font-weight: bold;
+  word-spacing: 4px;
+  position: relative;
+  padding-right: 40px;
+  margin-left: 40px;
 }
-
-.prp ul{
-  list-style: disc;
+ .prp::after{
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 6px;
+  height: 100%;
+  position: absolute;
+  background-color: var(--color3);
+  margin-top: 15px;
+}
+@keyframes deplacer{
+  0%{
+    margin-left: 100%;
+ 
   
-  width: 25%;
-  margin-left: 40%;
+
+  }
+
+  100%{
+    margin-left: 0px;
+   
+  }
+}
+.Apropos .lste{
+  width: 40%;
+  text-align: left;
+  margin-left: 90px;
+  margin-top: 20px;
+  line-height: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  word-spacing: 4px;
+  font-size: 20px;
+  list-style: circle;
+
+max-height: 400px;
+
+}
+.lste li{
+  margin-top: 35px;
+ 
+ 
+  max-height: 50px;
+  width: 100%;
 }
 .Gallery .Titre{
   color: var(--color1);
@@ -539,7 +585,13 @@ font-weight: bold;
         font-size: 30px;
         margin-left: 10px;
       }
-   
+   .prp::after
+   {display: none; 
+   }
+   .Apropos .lste{
+list-style: none;
+margin-left: 0px;
+   }
     .Contact .cnt{
       margin-left: 200px;
     }
@@ -605,12 +657,10 @@ background-color: #031a6e54;
     padding: 10px;
   }
 
-  .prp ul{
-   
-    
-    width: 60%;
-    margin-left: 26%;
-  }
+ .Apropos .prp,.Apropos .lste{
+  width: 100%;
+  text-align: center;
+ }
 
   .open-menu,
   .close-menu {

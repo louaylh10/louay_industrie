@@ -54,7 +54,9 @@ function App() {
     const numeroTelephone = '+21628815988';
     const lienWhatsapp = `https://wa.me/${numeroTelephone}`;
     window.open(lienWhatsapp);
-  }
+  };
+ 
+
   
   return (
     <div className="App">
@@ -85,7 +87,7 @@ function App() {
         <div className='what' onClick={whatsapp}><i class="fa-brands fa-whatsapp"></i></div>
        
         <Home />
-        <Propos />
+        <Propos/>
         <Gallery />
         <Contact />
     </div>
