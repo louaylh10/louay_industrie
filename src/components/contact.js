@@ -51,7 +51,6 @@ return false;
     obj.value="";
     mail.value="";
     e.innerHTML='&nbsp;';
-
     return true;
 }
  }

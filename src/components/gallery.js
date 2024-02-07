@@ -47,9 +47,9 @@ function Gallery() {
 <div className='right'onClick={rightClick}><i class="fa-solid fa-chevron-right"></i></div>
 <div className='cntr'>
 <div className='imge'><img src={img1} alt='' /><h1 className='tite'>Réparation des fissures et changement d'un tronçon de virole</h1></div>
-<div className='imge invisible'><img src={img2} alt='' /><h1 className='tite'>image2</h1> </div>
+<div className='imge invisible'><img src={img2} alt='' /><h1 className='tite'>Entretien broyer ciment vertical</h1> </div>
 <div className='imge invisible'><img src={img3} alt='' /><h1 className='tite'>Changement gain hgzor </h1></div>
-<div className='imge invisible'><img src={img4} alt='' /><h1 className='tite'>image4</h1></div>
+<div className='imge invisible'><img src={img4} alt='' /><h1 className='tite'>Changement de gaine de gaze et calarofigage</h1></div>
 </div>
 </div>
     </div>
