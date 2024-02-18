@@ -593,7 +593,7 @@ list-style: none;
 margin-left: 0px;
    }
     .Contact .cnt{
-      margin-left: 200px;
+      margin-left: 0px;
     }
       .cnt button{
         margin-left: 20px;
@@ -689,7 +689,7 @@ background-color: #031a6e54;
 }
 .Gallery .imgs-container .tite{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 30px;
+  font-size: 23px;
  padding-top: 10px;
 }
 .cnt .contect .items {
@@ -709,6 +709,11 @@ background-color: #031a6e54;
 
   width: 100%;
 }
+}
+@media (max-width:700px){
+  .Contact .cnt{
+    margin-left: 80px;
+  }
 }
 @media(max-width:500px){
   .Apropos .Titre{
